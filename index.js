@@ -12,4 +12,8 @@ app.get('/membres', (req, res) => {
     res.send(data);
 });
 
+app.get('/download/data.json, (req, res) => {
+    res.download("./data.json");
+});
+
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
