@@ -12,7 +12,7 @@ app.get('/membres', (req, res) => {
     res.send(data);
 });
 
-app.get('/download/data.json, (req, res) => {
+app.get('/download/data.json', (req, res) => {
     res.download("./data.json");
 });
 
